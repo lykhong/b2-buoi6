@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Mới Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #1565c0;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+        }
+        .menu {
+            background: #1976d2;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 20px;
+        }
+        .news-main {
+            flex: 2;
+        }
+        .news-main img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .news-main img:hover {
+            transform: scale(1.05);
+        }
+        .news-list {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+        }
+        .news-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .news-list li a {
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: 500;
+        }
+        .news-list li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Báo Mới - Tin Tức Nhanh</div>
+    <div class="menu">
+        <a href="#">Nóng</a>
+        <a href="#">Mới</a>
+        <a href="#">Video</a>
+        <a href="#">Chủ đề</a>
+        <a href="#"># Khám phá Việt Nam</a>
+        <a href="#"># Khám phá Thế Giới</a>
+    </div>
+    <div class="container">
+        <div class="news-main">
+            <a href="#">
+                <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_03_19_5_51747994/c9f51fdd1693ffcda682.jpg.avif" alt="Tin chính">
+            </a>
+            <h2><a href="#">Nga đồng ý ngừng tấn công vào cơ sở năng lượng của Ukraine</a></h2>
+            <p>Một số nội dung mô tả tin tức chính.</p>
+        </div>
+        <ul class="news-list">
+            <li>
+                <a href="#">
+                    <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2025_03_20_578_51762048/c0c1ffc7f4891dd74498.jpg.avif" alt="Giá vàng" width="100">
+                    Giá vàng hôm nay 19/3: Vàng nhẫn lập đỉnh mới
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2025_03_19_23_51747605/799291c4988a71d4289b.jpg.avif" alt="Tuyển Việt Nam" width="100">
+                    Tuyển Việt Nam đấu Campuchia: Khi ông Kim Sang Sik toàn tính
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2025_03_19_20_51749618/486afd71f43f1d61442e.jpg.avif" alt="Ukraine" width="100">
+                    Tổng thống Ukraine lên tiếng sau đàm phán Mỹ - Nga
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2025_03_19_114_51747731/268882d68b9862c63b89.jpg.avif" alt="TP.HCM" width="100">
+                    Cán bộ TP.HCM mạnh dạn đổi mới vì dân
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://photo-baomoi.bmcdn.me/w250_r3x2/2025_03_19_8_51747726/8530446f4d21a47ffd30.jpg.avif" alt="Lý Tự Trọng" width="100">
+                    100 cán bộ Đoàn xuất sắc nhận giải thưởng Lý Tự Trọng
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
